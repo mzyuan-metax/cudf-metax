@@ -1,3 +1,28 @@
+## 1.Build on MACA
+
+Please checkout `v25.10.00a-metax` branche or download `v25.10.00a-metax` branch source code.
+
+1. run maca docker maca container
+2. install dependencies: `apt-get install build-essential libssl-dev libz-dev git unzip -y`
+3. install cmake : `cmake-3.31.0 and wget https://cmake.org/files/v3.31/cmake-3.31.0.zip`
+4. install cuda toolkit: download and `sh cuda_12.9.0_575.51.03_linux.run  --silent --toolkit --samples`
+5. build on maca : `./build_maca.sh libcudf cudf`
+
+## 2.Build on HPCC
+
+Please checkout `v25.10.00a-metax` branche or download `v25.10.00a-metax` branch source code.
+
+1. run maca docker maca container
+2. install dependencies: `apt-get install build-essential libssl-dev libz-dev git unzip -y`
+3. install cmake : `cmake-3.31.0 and wget https://cmake.org/files/v3.31/cmake-3.31.0.zip`
+4. install cuda toolkit: download and `sh cuda_12.9.0_575.51.03_linux.run  --silent --toolkit --samples`
+5. build on maca : `./build_hpcc.sh libcudf cudf`
+
+
+> If you have any questions, please raise an issue !
+
+---
+
 # <div align="left"><img src="img/rapids_logo.png" width="90px"/>&nbsp;cuDF - GPU DataFrames</div>
 
 ## 📢 cuDF can now be used as a no-code-change accelerator for pandas! To learn more, see [here](https://rapids.ai/cudf-pandas/)!

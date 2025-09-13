@@ -23,7 +23,8 @@ uname -a
 echo
 
 echo "***GPU Information***"
-nvidia-smi
+ht-smi
+mx-smi
 echo
 
 echo "***CPU***"
